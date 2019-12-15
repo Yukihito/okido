@@ -45,5 +45,5 @@ class DamageCalculationService {
   }
 
   private def ジャイロボール威力(攻撃側のポケモン: ポケモン, 防御側のポケモン: ポケモン): Float =
-    ((25f * 防御側のポケモン.stats.s / 攻撃側のポケモン.stats.s) + 1f).toInt
+    ((25f * 防御側のポケモン.stats.s / 攻撃側のポケモン.copy(iv = 個体値.Min, ev = 努力値.Min).stats.s) + 1f).toInt
 }

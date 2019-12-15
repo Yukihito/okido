@@ -37,6 +37,7 @@ case class 個体値(h: Float, a: Float, b: Float, c: Float, d: Float, s: Float)
 
 object 個体値 {
   val Max = 個体値(31, 31, 31, 31, 31, 31)
+  val Min = 個体値(1, 1, 1, 1, 1, 1)
 }
 
 case class せいかく(a: Float = 1, b: Float = 1, c: Float = 1, d: Float = 1, s: Float = 1) extends StatsFactor {
